@@ -20,6 +20,7 @@ public class Pro {
 	{
 		  driver = new FirefoxDriver();
 		driver.get("https://www.facebook.com/");
+		
 	}
 	
 	@Test(priority = 1)
@@ -27,6 +28,7 @@ public class Pro {
 	{
 	WebElement uname = driver.findElement(By.xpath(".//*[@id='email']"));
 	uname.sendKeys("fff");
+	System.out.println("fb opened");
 	}
 	
 	@Test(priority = 2)
